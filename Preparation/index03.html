@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1 id="demo" onmouseover="change()">Hello World</h1>
+    <p>Welcome to the World of DOM, hope you like it</p>
+    <script>
+      function change() {
+        var x = document.getElementById("demo");
+        x.innerHTML = "Powered by Dom";
+
+        x.onmouseout = function () {
+          x.innerHTML = "Hello World";
+        };
+      }
+    </script>
+  </body>
+</html>
