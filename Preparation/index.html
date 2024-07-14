@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1 id="demo">Hello World</h1>
+    <p>Welcome to the World of DOM, hope you like it</p>
+    <button onclick="RogerBackground()">Toggle Background</button>
+    <script>
+      function RogerBackground() {
+        var body = document.body;
+        if (body.style.backgroundColor === "blue") {
+          body.style.backgroundColor = "white";
+          body.style.color = "blue";
+        } else {
+          body.style.backgroundColor = "blue";
+          body.style.color = "white";
+        }
+      }
+    </script>
+  </body>
+</html>
