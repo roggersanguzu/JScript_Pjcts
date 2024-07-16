@@ -1,4 +1,4 @@
-var container = document.querySelector(".container");
+var container = document.querySelector(".container");//Declarations
 function dropped() {
   var drop = document.createElement("span");
 
